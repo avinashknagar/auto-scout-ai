@@ -1,0 +1,7 @@
+tokens.yaml
+data/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env

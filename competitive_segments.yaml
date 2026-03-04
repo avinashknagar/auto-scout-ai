@@ -1,0 +1,94 @@
+segments:
+  entry_budget_hatchback:
+    body_type: hatchback
+    models: ["Alto 800", "Alto K10", "Alto", "Kwid", "Redi Go", "Redi-Go", "S-Presso", "S Presso", "Eon", "Go"]
+  tallboy_hatchback:
+    body_type: hatchback
+    models: ["New Wagon-R", "Wagon R 1.0", "Wagon R", "Wagon R 1.2", "Celerio", "Santro", "New Santro"]
+  compact_hatchback:
+    body_type: hatchback
+    models: ["Tiago", "Tiago Nrg", "Grand I10", "Grand I10 Nios", "Figo"]
+  premium_hatchback:
+    body_type: hatchback
+    models: ["Swift", "Baleno", "Elite I20", "Altroz", "Glanza", "Jazz", "Polo"]
+  crossover_hatchback:
+    body_type: hatchback
+    models: ["Ignis", "Freestyle", "C3"]
+  sub4m_sedan:
+    body_type: sedan
+    models: ["Dzire", "Amaze", "Tigor", "Aura", "Figo Aspire", "Ciaz"]
+  micro_suv:
+    body_type: suv
+    models: ["Punch", "Kuv100 Nxt"]
+  sub4m_suv:
+    body_type: suv
+    models: ["Nexon", "Venue", "Brezza", "Sonet", "Kiger", "Magnite", "XUV300", "Ecosport"]
+  compact_mpv:
+    body_type: mpv
+    models: ["Triber", "Go+", "Eeco"]
+  mpv_7_seater:
+    body_type: mpv
+    models: ["Ertiga"]
+
+variant_tiers:
+  maruti:
+    base: ["STD", "LXI", "LXI(O)", "L", "SIGMA", "TOUR H1", "TOUR H2", "TOUR S"]
+    mid:  ["VXI", "VXI(O)", "VXI+", "V", "VDI", "DELTA", "ZETA"]
+    top:  ["ZXI", "ZXI+", "ZDI", "ZDI+", "ALPHA"]
+  hyundai:
+    base: ["ERA", "E", "E+", "MAGNA", "BASE"]
+    mid:  ["S", "S(O)", "SPORTZ", "SPORTZ(O)", "SX"]
+    top:  ["ASTA", "ASTA(O)", "SX(O)"]
+  tata:
+    base: ["XE", "XM", "PURE"]
+    mid:  ["XT", "XZ", "XTA", "ADVENTURE", "CREATIVE"]
+    top:  ["XZ+", "XZA", "XZA+", "ACCOMPLISHED", "FEARLESS"]
+  renault:
+    base: ["RXE"]
+    mid:  ["RXL", "RXT"]
+    top:  ["RXZ", "CLIMBER"]
+  datsun:
+    base: ["D", "A"]
+    mid:  ["A(O)"]
+    top:  ["T", "T(O)"]
+  nissan:
+    base: ["XE"]
+    mid:  ["XL", "XL(O)"]
+    top:  ["XV", "XV PREMIUM"]
+  honda:
+    base: ["E", "SMT", "S"]
+    mid:  ["SV", "V"]
+    top:  ["VX", "ZX"]
+  ford:
+    base: ["AMBIENTE"]
+    mid:  ["TREND", "TREND+", "TITANIUM"]
+    top:  ["TITANIUM+", "TITANIUM S", "TITANIUM BLU"]
+  mahindra:
+    base: ["W2", "W4", "W5", "MX", "AX3"]
+    mid:  ["W6", "W7", "AX5", "K6+"]
+    top:  ["W8", "W8(O)", "W10", "W11(O)", "AX7", "AX7L"]
+  volkswagen:
+    base: ["TRENDLINE", "COMFORTLINE"]
+    mid:  ["COMFORTLINE PLUS"]
+    top:  ["HIGHLINE", "HIGHLINE PLUS", "GT", "GT TSI"]
+  toyota:
+    base: ["E", "J", "G"]
+    mid:  ["G(O)", "S", "V"]
+    top:  ["VX", "ZX", "ZR"]
+  citroen:
+    base: ["LIVE", "YOU"]
+    mid:  ["FEEL", "PLUS"]
+    top:  ["SHINE", "MAX"]
+  kia:
+    base: ["HTE", "HTE(O)", "PREMIUM"]
+    mid:  ["HTK", "HTK(O)", "HTK+", "HTX", "PRESTIGE"]
+    top:  ["HTX+", "GTX", "GTX+", "X-LINE", "X LINE", "LUXURY", "LUXURY PLUS"]
+  mg:
+    base: ["STYLE"]
+    mid:  ["SUPER", "SELECT", "SELECT PRO", "SMART", "SMART PRO"]
+    top:  ["SHARP", "SHARP(O)", "SHARP PRO", "SAVVY", "SAVVY PRO"]
+  skoda:
+    base: ["ACTIVE", "RIDER"]
+    mid:  ["AMBITION", "ONYX"]
+    top:  ["STYLE", "L&K", "LAURIN & KLEMENT", "MONTE CARLO"]
+

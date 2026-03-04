@@ -1,0 +1,70 @@
+# ============================================================
+# Car Scraping Pipeline - Configuration
+# ============================================================
+
+# Scraper settings (pagination, rate, city)
+scrape:
+  city: "delhi-ncr"
+  page_size: 20
+  max_pages: null           # null = scrape all; set a number to limit
+
+# ---- Central user preferences ----
+# Single source of truth. Used by:
+#   - Scraper APIs (price sent as server-side filter to reduce traffic)
+#   - Scraper post-filter (hard filter before DB storage)
+#   - Analyzer (hard filter + scoring boost + sent to LLM as context)
+filters:
+  min_price: 50000                   # 50K floor (avoids junk listings)
+  max_price: 500000                  # 5 lakhs ceiling
+  min_year: 2018                     # Drop cars older than 2018
+  max_owners: 1                      # First owner only
+  # transmission: "automatic"        # or "manual"
+  fuel_type: ["petrol", "cng"]       # or "diesel", "cng"
+  # body_type: ["suv", "hatchback"]  # list = any match
+  max_odometer_km: 50000          # max km driven
+
+# Rate limiting
+rate_limit:
+  delay_between_requests: 2.0    # Seconds between consecutive API calls
+  max_retries: 3
+  backoff_base: 2.0              # Exponential backoff: 2s, 4s, 8s
+  request_timeout: 30
+
+# Platform-specific settings
+platforms:
+  cars24:
+    enabled: true
+    city_id: "1"
+    x_user_city_id: "2"
+    x_tenant_id: "INDIA_CAR_LISTING"
+    base_url: "https://car-catalog-gateway-in.c24.tech/listing/v1/buy-used-cars-delhi-ncr"
+
+  spinny:
+    enabled: true
+    city_slug: "delhi-ncr"
+    base_url: "https://api.spinny.com/v3/api/listing/v6/"
+
+# Value analysis (LLM-powered)
+analyze:
+  model: "gpt-5.2"
+  reasoning_effort: "medium"
+  max_response_tokens: 16384
+  max_candidates: 80
+  top_deals_count: 15
+  output_dir: "data/analysis"
+  # api_key: "sk-..."        # Or set OPENAI_API_KEY env var (preferred)
+  # custom_note: "Looking for a reliable family car with good safety ratings"
+
+# Cleanup / maintenance
+cleanup:
+  retention_days: 30          # Keep data for 30 days
+  log_max_size_mb: 5          # Rotate log when it exceeds this
+
+# Storage
+database:
+  path: "data/cars.db"
+
+# Logging
+logging:
+  level: "INFO"
+  file: "data/scraper.log"

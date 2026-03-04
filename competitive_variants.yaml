@@ -1,0 +1,242 @@
+# Competitive variant mapping — which specific variants compete across models
+# Tiers are based on feature equivalence, not price
+
+entry_budget_hatchback:
+  tier_1:
+    description: "Entry - manual AC, basic or no audio, minimal convenience"
+    variants:
+      - {make: "Maruti", model: "Alto 800", trims: ["STD", "STD(O)", "LXI"]}
+      - {make: "Maruti", model: "Alto K10", trims: ["STD", "LXI", "LXI(O)"]}
+      - {make: "Maruti", model: "S-Presso", trims: ["STD", "LXI"]}
+      - {make: "Renault", model: "Kwid", trims: ["RXE"]}
+      - {make: "Datsun", model: "Redi Go", trims: ["D", "A"]}
+      - {make: "Hyundai", model: "Eon", trims: ["D-Lite", "D-Lite+", "Era"]}
+      - {make: "Datsun", model: "Go", trims: ["D", "A"]}
+  tier_2:
+    description: "Mid - power windows, audio with Bluetooth, dual airbags (or driver-only on older cars)"
+    variants:
+      - {make: "Maruti", model: "Alto 800", trims: ["VXI", "VXI(O)"]}
+      - {make: "Maruti", model: "Alto K10", trims: ["VXI", "VXI(O)", "VXI AMT", "VXI(O) AMT"]}
+      - {make: "Maruti", model: "S-Presso", trims: ["VXI", "VXI AMT", "VXI(O)", "VXI(O) AMT"]}
+      - {make: "Renault", model: "Kwid", trims: ["RXL", "RXL(O)", "RXL AMT", "RXL(O) AMT"]}
+      - {make: "Datsun", model: "Redi Go", trims: ["A(O)", "T", "T(O)", "T(O) AMT", "T AMT"]}
+      - {make: "Hyundai", model: "Eon", trims: ["Magna", "Magna(O)", "Sportz"]}
+      - {make: "Datsun", model: "Go", trims: ["T", "T(O)"]}
+  tier_3:
+    description: "Top - touchscreen infotainment, alloys (where available), rear camera, extra kit"
+    variants:
+      - {make: "Maruti", model: "S-Presso", trims: ["VXI+", "VXI+ AMT"]}
+      - {make: "Renault", model: "Kwid", trims: ["RXT", "RXT AMT", "Climber", "Climber AMT"]}
+      # Alto 800 / Alto K10 / Eon / Go / Redi Go generally do not reach full modern 'tier_3' spec
+
+tallboy_hatchback:
+  tier_1:
+    description: "Entry - basic AC, limited power features"
+    variants:
+      - {make: "Maruti", model: "WagonR", trims: ["LXI", "LXI(O)", "LXI CNG"]}
+      - {make: "Maruti", model: "Celerio", trims: ["LXI", "LXI(O)", "LXI CNG"]}
+      - {make: "Hyundai", model: "Santro", trims: ["Era"]}
+      - {make: "Hyundai", model: "New Santro", trims: ["Era", "Magna"]}
+  tier_2:
+    description: "Mid - power windows all around, music system, body-colored fittings"
+    variants:
+      - {make: "Maruti", model: "WagonR", trims: ["VXI", "VXI(O)", "VXI AMT", "ZXI"]}
+      - {make: "Maruti", model: "Celerio", trims: ["VXI", "VXI(O)", "VXI AMT", "ZXI"]}
+      - {make: "Hyundai", model: "Santro", trims: ["Magna", "Sportz"]}
+      - {make: "Hyundai", model: "New Santro", trims: ["Magna AMT", "Sportz", "Sportz AMT"]}
+  tier_3:
+    description: "Top - touchscreen (on newer models), more safety and cosmetic enhancements"
+    variants:
+      - {make: "Maruti", model: "WagonR", trims: ["ZXI AMT", "ZXI+", "ZXI+ AMT", "ZXI PLUS"]}
+      - {make: "Maruti", model: "Celerio", trims: ["ZXI AMT", "ZXI+", "ZXI+ AMT"]}
+      - {make: "Hyundai", model: "Santro", trims: ["Asta"]}
+      - {make: "Hyundai", model: "New Santro", trims: ["Asta"]}
+
+compact_hatchback:
+  tier_1:
+    description: "Entry - AC, limited infotainment, basic safety"
+    variants:
+      - {make: "Tata", model: "Tiago", trims: ["XE", "XM"]}
+      - {make: "Hyundai", model: "Grand I10", trims: ["Era", "Magna"]}
+      - {make: "Hyundai", model: "Grand I10 Nios", trims: ["Era", "Magna"]}
+      - {make: "Ford", model: "Figo", trims: ["Ambiente"]}
+  tier_2:
+    description: "Mid - proper audio/Bluetooth, power windows, rear sensors"
+    variants:
+      - {make: "Tata", model: "Tiago", trims: ["XT", "XT(O)", "XZ", "XTA"]}
+      - {make: "Tata", model: "Tiago Nrg", trims: ["XT", "XZ"]}
+      - {make: "Hyundai", model: "Grand I10", trims: ["Sportz"]}
+      - {make: "Hyundai", model: "Grand I10 Nios", trims: ["Sportz", "Sportz(O)"]}
+      - {make: "Ford", model: "Figo", trims: ["Trend", "Titanium"]}
+  tier_3:
+    description: "Top - touchscreen, alloys, camera, auto AC / extra safety"
+    variants:
+      - {make: "Tata", model: "Tiago", trims: ["XZ+", "XZ+ DT", "XZ+ AMT", "XZA", "XZA PLUS", "XZA+", "XZA+ DT"]}
+      - {make: "Hyundai", model: "Grand I10 Nios", trims: ["Asta", "Asta AMT"]}
+      - {make: "Ford", model: "Figo", trims: ["Titanium Blu", "Titanium+ AT"]}
+
+premium_hatchback:
+  tier_1:
+    description: "Entry - AC, basic audio, minimal cosmetic/safety upgrades"
+    variants:
+      - {make: "Maruti", model: "Swift", trims: ["LXI", "LDI"]}
+      - {make: "Maruti", model: "Baleno", trims: ["Sigma"]}
+      - {make: "Hyundai", model: "Elite I20", trims: ["Era", "Magna"]}
+      - {make: "Tata", model: "Altroz", trims: ["XE", "XE+"]}
+      - {make: "Toyota", model: "Glanza", trims: ["G", "E"]} # lower-spec Glanza equivalents
+      - {make: "Honda", model: "Jazz", trims: ["SV"]}
+      - {make: "Volkswagen", model: "Polo", trims: ["Trendline"]}
+  tier_2:
+    description: "Mid - dual airbags, power features, better audio, more convenience"
+    variants:
+      - {make: "Maruti", model: "Swift", trims: ["VXI", "VXI(O)", "VXI AMT"]}
+      - {make: "Maruti", model: "Baleno", trims: ["Delta"]}
+      - {make: "Hyundai", model: "Elite I20", trims: ["Sportz"]}
+      - {make: "Tata", model: "Altroz", trims: ["XM", "XM+", "XT"]}
+      - {make: "Toyota", model: "Glanza", trims: ["S", "G Smart Hybrid"]}
+      - {make: "Honda", model: "Jazz", trims: ["V", "V CVT"]}
+      - {make: "Volkswagen", model: "Polo", trims: ["Comfortline", "Comfortline Plus"]}
+  tier_3:
+    description: "Top - touchscreen, alloys, rear camera, projectors, additional safety"
+    variants:
+      - {make: "Maruti", model: "Swift", trims: ["ZXI", "ZXI+", "ZXI AMT", "ZXI+ AMT"]}
+      - {make: "Maruti", model: "Baleno", trims: ["Zeta", "Alpha", "Zeta CVT", "Alpha CVT"]}
+      - {make: "Hyundai", model: "Elite I20", trims: ["Asta", "Asta(O)"]}
+      - {make: "Tata", model: "Altroz", trims: ["XZ", "XZ(O)", "XZ+", "XZ+ S"]}
+      - {make: "Toyota", model: "Glanza", trims: ["V", "V CVT"]}
+      - {make: "Honda", model: "Jazz", trims: ["VX", "ZX", "VX CVT", "ZX CVT"]}
+      - {make: "Volkswagen", model: "Polo", trims: ["Highline", "Highline Plus", "GT TSI", "GT TDI"]}
+
+crossover_hatchback:
+  tier_1:
+    description: "Entry - basic AC and audio, fewer styling/safety features"
+    variants:
+      - {make: "Maruti", model: "Ignis", trims: ["Sigma"]}
+      - {make: "Ford", model: "Freestyle", trims: ["Ambiente"]}
+      - {make: "Citroen", model: "C3", trims: ["Live"]}
+  tier_2:
+    description: "Mid - better infotainment, power features, additional safety"
+    variants:
+      - {make: "Maruti", model: "Ignis", trims: ["Delta"]}
+      - {make: "Ford", model: "Freestyle", trims: ["Trend", "Titanium"]}
+      - {make: "Citroen", model: "C3", trims: ["Feel"]}
+  tier_3:
+    description: "Top - touchscreen, alloys, rear camera, extra kit"
+    variants:
+      - {make: "Maruti", model: "Ignis", trims: ["Zeta", "Alpha"]}
+      - {make: "Ford", model: "Freestyle", trims: ["Titanium+", "Flair"]}
+      - {make: "Citroen", model: "C3", trims: ["Shine"]}
+
+sub4m_sedan:
+  tier_1:
+    description: "Entry - AC, power steering, limited infotainment"
+    variants:
+      - {make: "Maruti", model: "Dzire", trims: ["LXI", "LDI"]}
+      - {make: "Honda", model: "Amaze", trims: ["E"]}
+      - {make: "Tata", model: "Tigor", trims: ["XE"]}
+      - {make: "Hyundai", model: "Aura", trims: ["E"]}
+      - {make: "Ford", model: "Figo Aspire", trims: ["Ambiente"]}
+      - {make: "Maruti", model: "Ciaz", trims: ["Sigma"]}
+  tier_2:
+    description: "Mid - power windows, audio with Bluetooth, rear sensors, dual airbags"
+    variants:
+      - {make: "Maruti", model: "Dzire", trims: ["VXI", "VDI", "VXI AMT", "VDI AMT"]}
+      - {make: "Honda", model: "Amaze", trims: ["S", "S CVT"]}
+      - {make: "Tata", model: "Tigor", trims: ["XM", "XZ"]}
+      - {make: "Hyundai", model: "Aura", trims: ["S", "SX"]}
+      - {make: "Ford", model: "Figo Aspire", trims: ["Trend", "Titanium"]}
+      - {make: "Maruti", model: "Ciaz", trims: ["Delta", "Zeta"]}
+  tier_3:
+    description: "Top - touchscreen, alloys, camera, auto AC / extra safety"
+    variants:
+      - {make: "Maruti", model: "Dzire", trims: ["ZXI", "ZXI+", "ZXI AMT", "ZXI+ AMT"]}
+      - {make: "Honda", model: "Amaze", trims: ["V", "VX", "V CVT", "VX CVT"]}
+      - {make: "Tata", model: "Tigor", trims: ["XZ+", "XZ+ DT", "XZ+ AMT"]}
+      - {make: "Hyundai", model: "Aura", trims: ["SX(O)", "SX(O) AMT"]}
+      - {make: "Ford", model: "Figo Aspire", trims: ["Titanium+", "Titanium+ AT"]}
+      - {make: "Maruti", model: "Ciaz", trims: ["Alpha", "Alpha AT"]}
+
+micro_suv:
+  tier_1:
+    description: "Entry - micro-SUV style, basic feature set"
+    variants:
+      - {make: "Tata", model: "Punch", trims: ["Pure"]}
+      - {make: "Mahindra", model: "Kuv100 Nxt", trims: ["K2", "K2+"]}
+  tier_2:
+    description: "Mid - infotainment, power features, some cosmetic upgrades"
+    variants:
+      - {make: "Tata", model: "Punch", trims: ["Adventure", "Adventure Rhythm Pack"]}
+      - {make: "Mahindra", model: "Kuv100 Nxt", trims: ["K4", "K4+"]}
+  tier_3:
+    description: "Top - touchscreen, alloys, extra safety/convenience"
+    variants:
+      - {make: "Tata", model: "Punch", trims: ["Accomplished", "Accomplished Dazzle Pack", "Creative", "Creative IRA"]}
+      - {make: "Mahindra", model: "Kuv100 Nxt", trims: ["K6", "K6+", "K8"]}
+
+sub4m_suv:
+  tier_1:
+    description: "Entry - basic safety, steel wheels, limited infotainment"
+    variants:
+      - {make: "Tata", model: "Nexon", trims: ["XE"]}
+      - {make: "Hyundai", model: "Venue", trims: ["E"]}
+      - {make: "Maruti", model: "Brezza", trims: ["LXI"]}
+      - {make: "Kia", model: "Sonet", trims: ["HTE"]}
+      - {make: "Renault", model: "Kiger", trims: ["RXE"]}
+      - {make: "Nissan", model: "Magnite", trims: ["XE"]}
+      - {make: "Mahindra", model: "XUV300", trims: ["W4"]}
+      - {make: "Ford", model: "Ecosport", trims: ["Ambiente"]}
+  tier_2:
+    description: "Mid - touchscreen/audio, power features, rear sensors, some styling extras"
+    variants:
+      - {make: "Tata", model: "Nexon", trims: ["XM", "XM(S)", "XT", "XZ"]}
+      - {make: "Hyundai", model: "Venue", trims: ["S", "S(O)", "S+", "S IMT"]}
+      - {make: "Maruti", model: "Brezza", trims: ["VXI", "VXI AT"]}
+      - {make: "Kia", model: "Sonet", trims: ["HTK", "HTK+", "HTK+ iMT"]}
+      - {make: "Renault", model: "Kiger", trims: ["RXL", "RXT", "RXT(O)"]}
+      - {make: "Nissan", model: "Magnite", trims: ["XL", "XV", "XV Premium"]}
+      - {make: "Mahindra", model: "XUV300", trims: ["W6"]}
+      - {make: "Ford", model: "Ecosport", trims: ["Trend", "Titanium"]}
+  tier_3:
+    description: "Top - alloys, full touchscreen with connected tech, camera, extra airbags/ESP"
+    variants:
+      - {make: "Tata", model: "Nexon", trims: ["XZ+", "XZ+ S", "XZ+ (O)", "XZA+", "XZA+ S", "XZA PLUS"]}
+      - {make: "Hyundai", model: "Venue", trims: ["SX", "SX(O)", "SX(O) iMT", "SX(O) DCT"]}
+      - {make: "Maruti", model: "Brezza", trims: ["ZXI", "ZXI+", "ZXI AT", "ZXI+ AT"]}
+      - {make: "Kia", model: "Sonet", trims: ["HTX", "HTX+", "GTX+", "X-Line"]}
+      - {make: "Renault", model: "Kiger", trims: ["RXZ", "RXZ Turbo", "RXZ Turbo CVT"]}
+      - {make: "Nissan", model: "Magnite", trims: ["XV Premium(O)", "XV Premium(O) Turbo", "XV Premium(O) Turbo CVT"]}
+      - {make: "Mahindra", model: "XUV300", trims: ["W8", "W8(O)"]}
+      - {make: "Ford", model: "Ecosport", trims: ["Titanium+", "S"]}
+
+compact_mpv:
+  tier_1:
+    description: "Entry - 7-seater packaging, basic feature set"
+    variants:
+      - {make: "Renault", model: "Triber", trims: ["RXE"]}
+      - {make: "Datsun", model: "Go+", trims: ["D", "A"]}
+      - {make: "Maruti", model: "Eeco", trims: ["5 STR STD", "7 STR STD"]}
+  tier_2:
+    description: "Mid - power windows, audio, basic convenience"
+    variants:
+      - {make: "Renault", model: "Triber", trims: ["RXL", "RXL AMT"]}
+      - {make: "Datsun", model: "Go+", trims: ["T", "T(O)"]}
+      - {make: "Maruti", model: "Eeco", trims: ["5 STR AC", "Tour V"]}
+  tier_3:
+    description: "Top - touchscreen, camera, alloys (where available)"
+    variants:
+      - {make: "Renault", model: "Triber", trims: ["RXT", "RXT AMT", "RXZ", "RXZ AMT"]}
+      # Go+ and Eeco never really reach a full 'tier_3' modern feature set in this price band
+
+mpv_7_seater:
+  tier_1:
+    description: "Entry - 7-seater, manual AC, basic features"
+    variants:
+      - {make: "Maruti", model: "Ertiga", trims: ["LXI", "LDI"]}
+  tier_2:
+    description: "Mid - power windows, audio, better trim"
+    variants:
+      - {make: "Maruti", model: "Ertiga", trims: ["VXI", "VDI", "VXI AT", "VDI AMT"]}
+  tier_3:
+    description: "Top - alloy wheels, touchscreen, camera, extra airbags"
+    variants:
+      - {make: "Maruti", model: "Ertiga", trims: ["ZXI", "ZXI+", "ZDI", "ZDI+", "ZXI AT", "ZXI+ AT"]}
