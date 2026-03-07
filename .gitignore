@@ -1,4 +1,5 @@
 tokens.yaml
+api_reference/
 data/
 venv/
 __pycache__/
